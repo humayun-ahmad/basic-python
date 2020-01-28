@@ -9,6 +9,10 @@ This is a temporary script file.
 import re
 
 text = "my phone number is 01796000000"
-phoneRegex = re.compile(r"\d\d\d\d\d\d\d\d\d\d\d")
+#1's optimization:
+#phoneRegex = re.compile(r"\d\d\d\d\d\d\d\d\d\d\d")
+
+#2's optimaization:
+phoneRegex = re.compile(r"\d{11}")
 
 print(phoneRegex.search(text))
